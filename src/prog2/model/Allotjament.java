@@ -48,6 +48,9 @@ public abstract class Allotjament implements InAllotjament{
     public boolean getEstat(){
         return estat;
     }
+    public void setEstat(boolean estatAllotjament){
+        this.estat = estatAllotjament;
+    }
 
     public void setIlluminacio(String illuminacio){
         this.illuminacio = illuminacio;

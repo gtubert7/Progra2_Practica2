@@ -22,10 +22,9 @@ public interface InLlistaIncidencies {
     public void afegirIncidencia(int num, String tipus, Allotjament allotjament, String data) throws ExcepcioCamping;
     /**
     * Aquest mètode elimina una incidència de la llista i actualitza l'estat de l'allotjament mitjançant el mètode obrirAllotjament de la classe Allotjament.
-    * @param in Objecte de tipus Incidència
     * @throws ExcepcioCamping
      */
-    public void eliminarIncidencia(Incidencia in) throws ExcepcioCamping;
+    public void eliminarIncidencia() throws ExcepcioCamping;
     
     /**
      * Itera sobre la llista d'incidències i retorna un String amb la informació de totes les incidències. 
