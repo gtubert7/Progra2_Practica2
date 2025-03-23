@@ -2,9 +2,9 @@ package prog2.model;
 
 public class Incidencia {
     private int numIncidencia;
-    Allotjament allotjament;
-    String data;
-    TipusIncidencia tipusIncidencia;
+    private Allotjament allotjament;
+    private String data;
+    private TipusIncidencia tipusIncidencia;
 
     public Incidencia(int numIncidencia, Allotjament allotjament, String data, TipusIncidencia tipusIncidencia){
         setNumIncidencia(numIncidencia);
@@ -45,6 +45,16 @@ public class Incidencia {
         if (tipusIncidencia == TipusIncidencia.Reparacio) return "100%";
         else if (tipusIncidencia == TipusIncidencia.Neteja) return "50%";
         else return "0%";
+    }
+    @Override
+    public String toString() {
+        return "Incidencia{" +
+                "numero=" + numIncidencia +
+                ", allotjament=" + allotjament +
+                ", data='" + data + '\'' +
+                ", tipus=" + tipusIncidencia +
+                ", iluminacio=" + getIluminacioAllotjament() +
+                '}';
     }
 
     public static enum TipusIncidencia {
