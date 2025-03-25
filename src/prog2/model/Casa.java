@@ -7,11 +7,11 @@ package prog2.model;
  */
 
 public abstract class Casa extends Allotjament{
-    private String mida;
+    private float mida;
     private int habitacions;
     private int placesPersones;
     //Constructor de Casa
-    Casa(String nom_, String idAllotjament_, long estadaMinimaALTA, long estadaMinimaBAIXA, boolean estatAllotjament, String illuminacio, String mida, int habitacions, int placesPersones){
+    Casa(String nom_, String idAllotjament_, long estadaMinimaALTA, long estadaMinimaBAIXA, boolean estatAllotjament, String illuminacio, float mida, int habitacions, int placesPersones){
         //Fem servir super() per als estats heretats
         super(nom_, idAllotjament_, estadaMinimaALTA, estadaMinimaBAIXA,  estatAllotjament, illuminacio);
 
@@ -22,8 +22,8 @@ public abstract class Casa extends Allotjament{
     }
 
     //Construim els setters i els getters
-    public String getMida(){return mida;}
-    public void setMida(String mida){this.mida = mida;}
+    public float getMida(){return mida;}
+    public void setMida(float mida){this.mida = mida;}
 
     public int getHabitacions(){return habitacions;}
     public void setHabitacions(int habitacions){this.habitacions = habitacions;}

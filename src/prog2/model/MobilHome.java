@@ -10,7 +10,7 @@ public class MobilHome extends Casa {
     private boolean terrassaBarbacoa;
 
     //Constructor de MobilHome
-    public MobilHome(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, String mida, int habitacions, int placesPersones,
+    public MobilHome(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, float mida, int habitacions, int placesPersones,
                      boolean terrassaBarbacoa){
 
         //Fem servir super() per als estats heretats

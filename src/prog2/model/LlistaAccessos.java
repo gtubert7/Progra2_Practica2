@@ -46,7 +46,7 @@ public class LlistaAccessos implements InLlistaAccessos {
         }
     }
 
-    public int calculaAccessosAccessibles() throws ExcepcioCamping{
+    public int calculaAccessosAccessibles(){
         int count = 0;
         for (Acces acc : accessos) {
             if (acc.isAccessibilitat()) count++;
@@ -54,7 +54,7 @@ public class LlistaAccessos implements InLlistaAccessos {
         return count;
     }
 
-    public float calculaMetresQuadratsAsfalt() throws ExcepcioCamping{
+    public float calculaMetresQuadratsAsfalt() {
         float total = 0;
         for (Acces acc : accessos) {
             if (acc instanceof AccesAsfalt) {

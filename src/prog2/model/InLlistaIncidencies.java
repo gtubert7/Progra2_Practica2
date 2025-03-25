@@ -24,7 +24,7 @@ public interface InLlistaIncidencies {
     * Aquest mètode elimina una incidència de la llista i actualitza l'estat de l'allotjament mitjançant el mètode obrirAllotjament de la classe Allotjament.
     * @throws ExcepcioCamping
      */
-    public void eliminarIncidencia() throws ExcepcioCamping;
+    public void eliminarIncidencia(Incidencia incidencia) throws ExcepcioCamping;
     
     /**
      * Itera sobre la llista d'incidències i retorna un String amb la informació de totes les incidències. 

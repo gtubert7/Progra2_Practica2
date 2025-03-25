@@ -4,14 +4,19 @@ package prog2.model;
  * Classe abstracta per accessos de terra.
  */
 public abstract class AccesTerra extends Acces {
-    protected int longitud;
+    protected float longitud;
 
-    public AccesTerra(String nom, boolean accessibilitat, int longitud) {
+    public AccesTerra(String nom, boolean accessibilitat, float longitud) {
         super(nom, accessibilitat);
         this.longitud = longitud;
     }
 
-    public int getLongitud() {return longitud;}
+    public AccesTerra(String nom, boolean accessibilitat, boolean estat, float longitud) {
+        super(nom, accessibilitat, estat);
+        this.longitud = longitud;
+    }
+
+    public float getLongitud() {return longitud;}
 
     public void setLongitud(int longitud) {this.longitud = longitud;}
 

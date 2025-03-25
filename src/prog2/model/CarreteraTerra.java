@@ -4,14 +4,18 @@ package prog2.model;
  * Classe que representa una carretera de terra.
  */
 public class CarreteraTerra extends AccesTerra {
-    private int amplada;
+    private float amplada;
 
-    public CarreteraTerra(String nom, int longitud, int amplada) {
+    public CarreteraTerra(String nom, float longitud, float amplada) {
         super(nom, true, longitud);
         this.amplada = amplada;
     }
+    public CarreteraTerra(String nom, boolean estat, float longitud, float amplada) {
+        super(nom, true, estat, longitud);
+        this.amplada = amplada;
+    }
 
-    public int getAmplada() {return amplada;}
+    public float getAmplada() {return amplada;}
 
     public void setAmplada(int amplada) {this.amplada = amplada;}
 

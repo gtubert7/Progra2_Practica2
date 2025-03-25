@@ -11,7 +11,7 @@ public class BungalowPremium extends Bungalow{
     private String codiWifi;
 
     //Constructor de BungalowPremium
-    public BungalowPremium(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, String mida, int habitacions, int placesPersones,
+    public BungalowPremium(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, float mida, int habitacions, int placesPersones,
                            int placesParquing, boolean terrassa, boolean tv, boolean aireFred,
                            boolean serveisExtra, String codiWifi){
         //Fem servir super() per als estats heretats

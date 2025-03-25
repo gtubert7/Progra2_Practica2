@@ -32,11 +32,11 @@ public class LlistaIncidencies implements InLlistaIncidencies{
         allotjament.setEstat(false);
     }
 
-    public void eliminarIncidencia() throws ExcepcioCamping{
+    public void eliminarIncidencia(Incidencia incidencia) throws ExcepcioCamping{
         if (incidencies.isEmpty()) {
             throw new ExcepcioCamping("No hi ha incidències per eliminar.");
         }
-
+        /* DE MOMENTO NO USAMOS SCANNER
         Scanner scanner = new Scanner(System.in);
 
         //Mostrem les incidències que hi ha registrades
@@ -49,9 +49,9 @@ public class LlistaIncidencies implements InLlistaIncidencies{
         if (index < 0 || index >= incidencies.size()) {
             throw new ExcepcioCamping("Número d'incidència no vàlid.");
         }
-
-        Incidencia in = incidencies.remove(index);
-        in.getAllotjament().obrirAllotjament(); // Reobre l'allotjament afectat
+        */
+        incidencies.remove(incidencia);
+        incidencia.getAllotjament().obrirAllotjament(); // Reobre l'allotjament afectat
         System.out.println("Incidència eliminada correctament.");
     }
 

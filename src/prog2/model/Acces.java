@@ -6,13 +6,19 @@ import java.util.List;
 public abstract class Acces implements InAcces {
     private String nom;
     private boolean accessibilitat;
-    private boolean estat; // true = obert, false = tancat
+    private boolean estat; // true = Obert, false = Tancat
     private List<Allotjament> allotjaments;
 
     public Acces(String nom, boolean accessibilitat) {
         this.nom = nom;
         this.accessibilitat = accessibilitat;
         this.estat = true; // Per defecte obert
+        this.allotjaments = new ArrayList<>();
+    }
+    public Acces(String nom, boolean accessibilitat, boolean estat) {
+        this.nom = nom;
+        this.accessibilitat = accessibilitat;
+        this.estat = estat; // Per defecte obert
         this.allotjaments = new ArrayList<>();
     }
 

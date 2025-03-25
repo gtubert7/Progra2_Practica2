@@ -14,7 +14,7 @@ public class Bungalow extends Casa {
     private boolean aireFred;
 
     //Constructor de Bungalow
-    public Bungalow(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, String mida, int habitacions, int placesPersones,
+    public Bungalow(String nom_, String idAllotjament_, boolean estatAllotjament, String illuminacio, float mida, int habitacions, int placesPersones,
                     int placesParquing, boolean terrassa, boolean tv, boolean aireFred){
         //Fem servir super() per als estats heretats
         super(nom_, idAllotjament_, 7, 4,  estatAllotjament, illuminacio, mida, habitacions, placesPersones);

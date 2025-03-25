@@ -4,14 +4,19 @@ package prog2.model;
  * Classe que representa una carretera asfaltada.
  */
 public class CarreteraAsfalt extends AccesAsfalt {
-    private int pesMaximKg;
+    private float pesMaximKg;
 
-    public CarreteraAsfalt(String nom, int metresQuadratsAsfalt, int pesMaximKg) {
+    public CarreteraAsfalt(String nom, float metresQuadratsAsfalt, float pesMaximKg) {
         super(nom, true, metresQuadratsAsfalt);
         this.pesMaximKg = pesMaximKg;
     }
 
-    public int getPesMaximKg() {return pesMaximKg;}
+    public CarreteraAsfalt(String nom, boolean estat, float metresQuadratsAsfalt, float pesMaximKg) {
+        super(nom, true, estat, metresQuadratsAsfalt);
+        this.pesMaximKg = pesMaximKg;
+    }
+
+    public float getPesMaximKg() {return pesMaximKg;}
 
     public void setPesMaximKg(int pesMaximKg) {this.pesMaximKg = pesMaximKg;}
 
