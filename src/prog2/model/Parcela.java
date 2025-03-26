@@ -24,6 +24,7 @@ public class Parcela extends Allotjament{
     public void setConnexioElectrica(boolean connexioElectrica){this.connexioElectrica = connexioElectrica;}
 
     //Revisem si funciona l'allotjament
+    @Override
     public boolean correcteFuncionament(){
         return isConnexioElectrica();
     }

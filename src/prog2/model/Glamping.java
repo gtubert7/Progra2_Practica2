@@ -24,6 +24,7 @@ public class Glamping extends Casa {
     public boolean isCasaMascota(){return casaMascota;}
     public void setCasaMascota(boolean casaMascota){this.casaMascota = casaMascota;}
 
+    @Override
     public boolean correcteFuncionament() {
         return isCasaMascota();
     }

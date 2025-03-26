@@ -28,6 +28,7 @@ public class BungalowPremium extends Bungalow{
     public void setCodiWifi(String codiWifi){this.codiWifi = codiWifi;}
 
     //Veiem si (a) les condicions de correcte funcionament del bungalow funcionen i (b) si la el codi del wifi es correcte
+    @Override
     public boolean correcteFuncionament() {
         int longitud = getCodiWifi().length();
         return super.correcteFuncionament() && 8 <= longitud && longitud <= 16;

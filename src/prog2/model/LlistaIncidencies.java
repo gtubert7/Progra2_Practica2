@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class LlistaIncidencies implements InLlistaIncidencies{
     private ArrayList<Incidencia> incidencies;
 
-    public LlistaIncidencies(ArrayList<Incidencia> incidencies) {
+    public LlistaIncidencies() {
         this.incidencies = new ArrayList<>();
     }
 

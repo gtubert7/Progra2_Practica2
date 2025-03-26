@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class LlistaAccessos implements InLlistaAccessos {
     private ArrayList<Acces> accessos;
 
-    public LlistaAccessos(ArrayList<Acces> accessos) {
+    public LlistaAccessos() {
         this.accessos = new ArrayList<>();
     }
 
@@ -21,6 +21,7 @@ public class LlistaAccessos implements InLlistaAccessos {
     public void buidar(){
         for(Acces acc : accessos){
             accessos.remove(acc);
+
         }
     }
 

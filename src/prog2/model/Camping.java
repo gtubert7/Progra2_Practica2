@@ -17,9 +17,9 @@ public class Camping implements InCamping {
 
     private String nom;
     //Creem ArrayLists de cada tipus
-    private LlistaAllotjaments llistaAllotjaments;
-    private LlistaIncidencies llistaIncidencies;
-    private LlistaAccessos llistaAccessos;
+    private LlistaAllotjaments llistaAllotjaments = new LlistaAllotjaments();
+    private LlistaIncidencies llistaIncidencies = new LlistaIncidencies();
+    private LlistaAccessos llistaAccessos = new LlistaAccessos();
 
     /**
      * Constructor de la classe camping

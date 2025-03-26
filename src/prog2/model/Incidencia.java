@@ -37,6 +37,7 @@ public class Incidencia {
     public TipusIncidencia getTipusIncidencia() {
         return tipusIncidencia;
     }
+
     public void setTipusIncidencia(TipusIncidencia tipusIncidencia) {
         this.tipusIncidencia = tipusIncidencia;
     }

@@ -8,9 +8,7 @@ import java.util.ArrayList;
 public class LlistaAllotjaments implements InLlistaAllotjaments{
     private ArrayList<Allotjament> allotjaments;
 
-    public LlistaAllotjaments(ArrayList<Allotjament> allotjaments){
-        this.allotjaments = new ArrayList<>();
-    }
+    public LlistaAllotjaments(){ allotjaments = new ArrayList<>();}
 
     public void afegirAllotjament(Allotjament allotjament) throws ExcepcioCamping {
         if (allotjaments.contains(allotjament)) {

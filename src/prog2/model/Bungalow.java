@@ -39,6 +39,7 @@ public class Bungalow extends Casa {
     public void setAireFred(boolean aireFred){this.aireFred = aireFred;}
 
     //Comprovem que hi ha aire fred
+    @Override
     public boolean correcteFuncionament(){
         return isAireFred();
     }

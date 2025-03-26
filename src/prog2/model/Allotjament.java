@@ -70,6 +70,8 @@ public abstract class Allotjament implements InAllotjament{
         return ("Nom="+ getNom() + ", Id=" + getId() + ", estada mínima en temp ALTA: "+ getEstadaMinima(Temp.ALTA) + ", estada mínima en temp BAIXA: " + getEstadaMinima(Temp.BAIXA) + ", Estat: " + operatiu + ", Il·luminació: " + getIlluminacio() + "%.");
     }
 
+    public abstract boolean correcteFuncionament();
+
     public void tancarAllotjament(Incidencia in){
         estat = false;
         illuminacio = in.getIluminacioAllotjament();
