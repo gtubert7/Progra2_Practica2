@@ -2,10 +2,11 @@ package prog2.model;
 
 import prog2.vista.ExcepcioCamping;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class LlistaIncidencies implements InLlistaIncidencies{
+public class LlistaIncidencies implements InLlistaIncidencies, Serializable {
     private ArrayList<Incidencia> incidencies;
 
     public LlistaIncidencies() {

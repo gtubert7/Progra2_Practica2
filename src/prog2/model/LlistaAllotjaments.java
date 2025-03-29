@@ -2,10 +2,11 @@ package prog2.model;
 
 import prog2.vista.ExcepcioCamping;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class LlistaAllotjaments implements InLlistaAllotjaments{
+public class LlistaAllotjaments implements InLlistaAllotjaments, Serializable {
     private ArrayList<Allotjament> allotjaments;
 
     public LlistaAllotjaments(){ allotjaments = new ArrayList<>();}

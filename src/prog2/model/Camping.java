@@ -13,7 +13,7 @@ import java.util.Iterator;
  * @author TubertGuillem
  */
 
-public class Camping implements InCamping {
+public  class Camping implements InCamping, Serializable{
 
     private String nom;
     //Creem ArrayLists de cada tipus

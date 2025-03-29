@@ -1,6 +1,8 @@
 package prog2.model;
 
-public class Incidencia {
+import java.io.Serializable;
+
+public class Incidencia implements Serializable {
     private int numIncidencia;
     private Allotjament allotjament;
     private String data;
