@@ -2,6 +2,8 @@ package prog2.model;
 
 /**
  * Classe que representa una carretera de terra.
+ * @author Lautaro Frexas
+ * @authro Guillem Tubert
  */
 public class CarreteraTerra extends AccesTerra {
     private float amplada;
